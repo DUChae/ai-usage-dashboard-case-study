@@ -1,0 +1,6 @@
+flowchart LR
+  A[Developer machine] --> B[Vercel deployment]
+  B --> C[Next.js app]
+  B --> D[Extension bundle]
+  C --> E[Upstash Redis]
+  D --> E

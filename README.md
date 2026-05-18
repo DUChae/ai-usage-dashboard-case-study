@@ -44,6 +44,11 @@ Chrome Extension
 
 ## Screenshots and Diagrams
 
+Store portfolio visuals in the folders below:
+
+- `screenshots/` for captured UI images
+- `diagrams/` for Mermaid source files
+
 ### Screenshots
 
 1. Main dashboard overview
@@ -68,6 +73,26 @@ Chrome Extension
 - Before / after comparison
 - Figma project/file breakdown screenshot
 - API response example
+
+## Folder Layout
+
+```text
+screenshots/
+  main-dashboard.png
+  service-openai.png
+  service-cursor.png
+  service-figma.png
+  extension-popup.png
+  sync-success.png
+  sync-error.png
+
+diagrams/
+  browser-to-redis.mmd
+  usage-normalization.mmd
+  dashboard-rendering.mmd
+  deployment.mmd
+  data-model.mmd
+```
 
 ## Local Setup
 

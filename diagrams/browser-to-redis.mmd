@@ -1,0 +1,7 @@
+flowchart LR
+  A[Chrome Extension] --> B[POST /api/session-sync]
+  B --> C[Next.js API Route]
+  C --> D[Validate payload]
+  D --> E[Upstash Redis]
+  E --> F[Usage fetchers]
+  F --> G[Dashboard UI]
