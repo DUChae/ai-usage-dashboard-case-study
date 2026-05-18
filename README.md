@@ -146,31 +146,6 @@ flowchart LR
 }
 ```
 
-## Folder Layout
-
-```text
-public/
-  img/
-    main-dashboard.png
-    extension.png
-    cursor.png
-    chatgpt.png
-
-diagrams/
-  browser-to-redis.mmd
-  usage-normalization.mmd
-  dashboard-rendering.mmd
-  deployment.mmd
-  data-model.mmd
-```
-
-## Recommended Structure
-
-- Put screenshots in `public/img/`
-- Put Mermaid sources in `diagrams/`
-- Keep the README as the single entry point for the case study
-- Add more images only if they explain a distinct workflow or state
-
 ## Local Setup
 
 ```bash
@@ -186,8 +161,4 @@ cd extension/ai-auto
 npm run build
 ```
 
-## Public Portfolio Notes
 
-- Use screenshots only for non-sensitive screens
-- Keep architecture diagrams high level
-- Avoid internal hostnames, private keys, and company identifiers
