@@ -51,10 +51,17 @@ Store portfolio visuals in the folders below:
 
 ### Screenshots
 
-![Main dashboard](./public/img/main-dashboard.png)
 ![Chrome Extension](./public/img/extension.png)
+*Chrome Extension popup that captures and syncs session state to the server.*
+
+![Main dashboard](./public/img/main-dashboard.png)
+*Main dashboard showing aggregate usage, cost, and trend views across providers.*
+
 ![Cursor detail](./public/img/cursor.png)
+*Cursor detail view showing account-level usage and request breakdown.*
+
 ![ChatGPT detail](./public/img/chatgpt.png)
+*ChatGPT detail view showing provider-specific usage metrics and history.*
 
 ### Diagrams
 
