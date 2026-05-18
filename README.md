@@ -124,11 +124,27 @@ flowchart LR
   A --> G[Figma projects/files]
 ```
 
-### Optional Evidence
+### API Response Example
 
-- Public demo URL
-- Before / after comparison
-- API response example
+```json
+{
+  "openai": {
+    "service": "openai",
+    "connected": true,
+    "cost": { "today": 1.24, "thisMonth": 18.73 },
+    "tokens": { "input": 12450, "output": 6432, "total": 18882 },
+    "requests": 42
+  },
+  "cursor": {
+    "service": "cursor",
+    "connected": true,
+    "cost": { "today": 0.48, "thisMonth": 9.15 },
+    "tokens": { "input": 4800, "output": 2100, "total": 6900 },
+    "requests": 19
+  },
+  "fetchedAt": "2026-05-18T00:00:00.000Z"
+}
+```
 
 ## Folder Layout
 
@@ -147,6 +163,13 @@ diagrams/
   deployment.mmd
   data-model.mmd
 ```
+
+## Recommended Structure
+
+- Put screenshots in `public/img/`
+- Put Mermaid sources in `diagrams/`
+- Keep the README as the single entry point for the case study
+- Add more images only if they explain a distinct workflow or state
 
 ## Local Setup
 
