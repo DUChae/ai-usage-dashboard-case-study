@@ -42,30 +42,32 @@ Chrome Extension
 - The dashboard uses shared types for service status, token counts, request counts, and cost metrics.
 - Figma receives a dedicated project/file breakdown view for recent activity.
 
-## Repository Contents
-
-- Public case-study README
-- Project outcome and resume templates
-- Portfolio and Git README templates
-- Capture / diagram checklist
-
 ## Screenshots and Diagrams
 
-See [portfolio-assets.md](./portfolio-assets.md) for the recommended capture order.
+### Screenshots
 
-Suggested screenshot set:
+1. Main dashboard overview
+2. Service detail view for OpenAI
+3. Service detail view for Cursor
+4. Service detail view for Figma
+5. Chrome Extension popup
+6. Session sync success state
+7. Error or fallback state
 
-- Dashboard overview
-- Service detail view
-- Extension popup
-- Session sync success state
+### Diagrams
 
-Suggested diagram set:
+1. Browser capture to Redis sync flow
+2. Usage normalization flow
+3. Dashboard rendering flow
+4. High-level deployment flow
+5. Data model overview
 
-- Browser capture to Redis sync flow
-- Usage normalization flow
-- Dashboard rendering flow
-- High-level deployment flow
+### Optional Evidence
+
+- Public demo URL
+- Before / after comparison
+- Figma project/file breakdown screenshot
+- API response example
 
 ## Local Setup
 
