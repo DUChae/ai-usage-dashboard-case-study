@@ -49,6 +49,24 @@ Chrome Extension
 - Portfolio and Git README templates
 - Capture / diagram checklist
 
+## Screenshots and Diagrams
+
+See [portfolio-assets.md](./portfolio-assets.md) for the recommended capture order.
+
+Suggested screenshot set:
+
+- Dashboard overview
+- Service detail view
+- Extension popup
+- Session sync success state
+
+Suggested diagram set:
+
+- Browser capture to Redis sync flow
+- Usage normalization flow
+- Dashboard rendering flow
+- High-level deployment flow
+
 ## Local Setup
 
 ```bash
