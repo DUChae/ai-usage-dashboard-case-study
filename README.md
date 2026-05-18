@@ -46,45 +46,92 @@ Chrome Extension
 
 Store portfolio visuals in the folders below:
 
-- `screenshots/` for captured UI images
+- `public/img/` for captured UI images
 - `diagrams/` for Mermaid source files
 
 ### Screenshots
 
-1. Main dashboard overview
-2. Service detail view for OpenAI
-3. Service detail view for Cursor
-4. Service detail view for Figma
-5. Chrome Extension popup
-6. Session sync success state
-7. Error or fallback state
+![Main dashboard](./public/img/main-dashboard.png)
+![Chrome Extension](./public/img/extension.png)
+![Cursor detail](./public/img/cursor.png)
+![ChatGPT detail](./public/img/chatgpt.png)
 
 ### Diagrams
 
-1. Browser capture to Redis sync flow
-2. Usage normalization flow
-3. Dashboard rendering flow
-4. High-level deployment flow
-5. Data model overview
+#### Browser capture to Redis sync flow
+
+```mermaid
+flowchart LR
+  A[Chrome Extension] --> B[POST /api/session-sync]
+  B --> C[Next.js API Route]
+  C --> D[Validate payload]
+  D --> E[Upstash Redis]
+  E --> F[Usage fetchers]
+  F --> G[Dashboard UI]
+```
+
+#### Usage normalization flow
+
+```mermaid
+flowchart LR
+  A[Provider payloads] --> B[Service adapter]
+  B --> C[Normalize fields]
+  C --> D[Shared response contract]
+  D --> E[Aggregate view]
+  D --> F[Service detail view]
+```
+
+#### Dashboard rendering flow
+
+```mermaid
+flowchart LR
+  A[API response] --> B[Shared types]
+  B --> C[Charts]
+  B --> D[Service cards]
+  B --> E[Detail tabs]
+  C --> F[Dashboard UI]
+  D --> F
+  E --> F
+```
+
+#### High-level deployment flow
+
+```mermaid
+flowchart LR
+  A[Developer machine] --> B[Vercel deployment]
+  B --> C[Next.js app]
+  B --> D[Extension bundle]
+  C --> E[Upstash Redis]
+  D --> E
+```
+
+#### Data model overview
+
+```mermaid
+flowchart LR
+  A[Service usage] --> B[Tokens]
+  A --> C[Requests]
+  A --> D[Cost]
+  A --> E[Daily history]
+  A --> F[Account breakdown]
+  A --> G[Figma projects/files]
+```
 
 ### Optional Evidence
 
 - Public demo URL
 - Before / after comparison
-- Figma project/file breakdown screenshot
 - API response example
 
 ## Folder Layout
 
 ```text
-screenshots/
-  main-dashboard.png
-  service-openai.png
-  service-cursor.png
-  service-figma.png
-  extension-popup.png
-  sync-success.png
-  sync-error.png
+public/
+  img/
+    main-dashboard.png
+    extension.png
+    cursor.png
+    chatgpt.png
 
 diagrams/
   browser-to-redis.mmd
